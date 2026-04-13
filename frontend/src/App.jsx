@@ -3,6 +3,8 @@ import './bootstrap.min.css'
 import './App.css';
 import Task from './components/Task';
 import TaskList from './components/TaskList';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -81,10 +83,15 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Todo List</h1>
-      <input type="text" value={newTodoText} onChange={handleInputChange} />
-      <button onClick={handleAddTodo}>Add Todo</button>
-      <TaskList todos={todos} onToggleCompleted={handleToggleCompleted} onDeleteTodo={handleDeleteTodo} />
+      <div className="App-Container">
+        <Form>
+          <Form.Group className="input"></Form.Group>
+          <Form.Label column="lg">Todo List</Form.Label>
+          <Form.Control value={newTodoText} onChange={handleInputChange} placeholder="add task here"></Form.Control>
+        </Form>
+        <Button size="lg" variant="primary" onClick={handleAddTodo}>Add Todo</Button>
+      </div>
+        <TaskList todos={todos} onToggleCompleted={handleToggleCompleted} onDeleteTodo={handleDeleteTodo} />
     </div>
   );
 }

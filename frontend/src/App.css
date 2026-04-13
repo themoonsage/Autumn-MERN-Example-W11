@@ -1,0 +1,25 @@
+.App-Container{
+    display:flex;
+    justify-content: center;
+
+}
+.taskName{
+    text-shadow: 
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    align-content: center;
+    padding:3px;
+}
+.task{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    background-color: #303030;
+    border-color:#282828;
+    border-style:solid;
+
+}
