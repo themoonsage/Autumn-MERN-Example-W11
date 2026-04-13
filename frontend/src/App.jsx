@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './bootstrap.min.css'
 import './App.css';
 import Task from './components/Task';
 import TaskList from './components/TaskList';

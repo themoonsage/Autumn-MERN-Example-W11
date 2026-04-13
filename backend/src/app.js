@@ -9,7 +9,7 @@ const app = express();
 const port = process.env.PORT || 5050;
 // this should always be in .env
 
-const uri = "mongodb+srv://<username>:<password>@----.----.mongodb.net"
+const uri = "mongodb+srv://arossa5904:Cis602Test@todo.nigotkt.mongodb.net/"
 // Connect to MongoDB using environment variable
 mongoose.set('strictQuery', false)
 
